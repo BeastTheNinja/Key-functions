@@ -1,0 +1,48 @@
+.nav-main{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--secondary);
+    margin: 0;
+    padding: 0;
+}
+.nav-main ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.nav-main li a {
+    display: block;
+    padding: 0.5rem;
+    color: var(--white);
+    text-decoration: none;
+}
+.nav-main li a:hover {
+    background-color: var(--primary);
+    transition: background-color 0.3s ease;
+    transform: scale(1.05);
+}
+/* MEDIA QUERIES: ONE "OVER" ("min-width"), and ONE "UNDER" ("max-width")! ;0) */
+/* OVER 1200PX */
+@media (min-width: 1200px){
+    .nav-main ul {
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav-main li a {
+        padding: 0.5rem;
+    }
+}
+/* UNDER 600px */
+@media (max-width: 500px) {
+    .nav-main ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .nav-main li a {
+        padding: 0.5rem;
+        text-align: center;
+    }
+}
+ 

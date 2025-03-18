@@ -1,0 +1,111 @@
+HTML Øvelse 1
+
+En øvelse i Opmærkning og Styling
+
+Item One
+Item Two
+Item Three
+Item Four
+
+HyperText Markup Language
+
+Hvad er HTML
+
+HTML er et opmærkningssprog, der primært har til formål at strukturere indholdet på en hjemmeside og få tekst og billeder til at virke som links til andre html-sider.
+
+Markup betyder at opmærke. I hjemmesidesammenhæng vil det sige at html definerer indhold på websider, f.eks. kan en tekst markeres som overskrift eller brødtekst, arrangeres i en punktopstilling eller tabel og et hyperlink kan indsættes som klikbar tekst.
+
+Dermed kan webbrowsere som f.eks. Firefox, MS Internet Explorer, Safari, Opera eller Google Chrome, skelne de forskellige teksttyper fra hinanden og vise indholdet formateret efter hvilken type det er markeret som. Typisk blå skrift.
+
+Hvad med udseende?
+
+HTML indeholder mulighed for med ”CSS” at bestemme mere detaljeret over udseendet af f.eks. overskrifter, tabeller, hyperlink og indlejring af billeder. Html-filer bruges på internettet, især på World Wide Web. Html filer har Extension .Html eller .Htm.
+
+Mere om HTML på HTML.dk
+
+
+HTML består af Elementer
+Elementer opmærkes med "HTML - Tags".
+
+HTML består af Elementer og der er omkring 120 stk. pr. ultimo 2023. Et eksempel på et HTML Element kunne være Article, - Altså en blok af sammenhængende tekst, der giver mening og kan læses for sig selv. F.eks. <strong>Aab ryger ud af Superligaen</strong> :0(
+
+Nogle Elementer er forbeholdt eller beregnet til at indeholde bestemt indhold. F.eks. En Navigation, Billede eller Grafik, En sektion eller artikel på siden eller f.eks. Video-Tagget der er beregnet til at indeholde videoer!
+
+Semantik  Semantic Markup
+
+Den første Draft-Udgave af HTML5 blev introduceret public i 2008! Og indtil da var en isimpel tingi som Video noget mere kompliceret at implementere på Websider, da de oftest krævede en afspiller! - Eks. FlashPlayer (.flv filer).
+
+Læs mere på w3schools
+
+
+Styling af HTML Elementer
+
+Browsere har en bestemt måde at vise elementer på, afhængigt af hvilken type element det er. Disse måder at blive vist på og placere sig på er overordnet anbefalet af W3.org (World Wide Web Consortium), og det er disse indstillinger vi ændrer via CSS.
+For at ændre den måde elementer vises på i browseren anvender vi CSS, (Cascading Style Sheets). CSS ændrer altså på den måde et element vises eller opfører sig på i Browseren, eksempelvis farve, størrelse, placering (Display og positioning), og meget mere.
+
+3 måder at style på
+
+Du kan anvende traditionel styling på 3 forskellige måder! - Inline - Styling hvor styling bliver påført elementerne direkte, Inline Stylesheet En overordnet liste af styling i dokumentets Head - tag og Ekstern Stylesheets (Eksterne Fælles styling).
+Mere om CSS på w3schools 
+
+
+Lister i HTML
+
+Du kender sikkert lister fra tekstbehandlingsprogrammer som Word - Lister kommer i to udgaver Unordered Lists og Ordered Lists. Forskellen er den måde de vises på i Browseren. Du angiver lister i HTML med Tagget ul eller ol 
+Unordered List
+
+List Item One
+List Item Two
+List Item Three
+List Item Four
+
+Ordered List
+
+List Item One
+List Item Two
+List Item Three
+List Item Four
+
+Nere om Lister
+Webudvikler Uddannelsen 2023
+
+
+https://moodle.techcollege.dk/course/view.php?id=10657
+
+SEO TEXT:
+
+SECTION - ABOUT:
+Basically about SEO
+
+Why SEO?
+Benefits of SEO
+SEO stands for "Search Engine Optimization", and basically it´s the things YOU can do to get a better "placement" in different "Search Listings".</p>
+Search engine optimization (SEO) is the process of growing a website’s organic search traffic. It’s where you do things that help you show up and rank higher in a search engine’s organic results.
+People are likely searching for what you do, and you can attract customers by ranking for those terms. But you’re unlikely to rank without effort, as others are trying to do the same. This is why SEO matters. It helps show Google that you most deserve to rank.
+Most people click one of the first few search results, so higher rankings usually lead to more traffic. Unlike other channels, search traffic tends to be consistent and passive. That’s because the number of searches is usually quite consistent month to month.
+<a href="https://ahrefs.com/seo" target="_blank" title="Beginners Guide to SEO on hrefs.com">Read more</a>
+
+Meta - Tags?
+Metadata is "data (information) about data".
+The "meta-tag" defines metadata about an HTML document. Metadata is data (information) about data. Meta-tags always go inside the "head - Element", and are typically used to specify character set, page description, keywords, viewport settings and more.
+Metadata will not be displayed on the page, but is machine parsable. Metadata is used by browsers (how to display content or reload page), search engines (keywords), and other web services. There is a method to let web designers take control over the viewport (the user's visible area of a web page), through the "meta-tag".
+The presence of Artificial Intelligence and "Machinelearning" in browsers like Google and Bing leaves some of these "SEO - Meta-tags" somewhat unnecessary, or at least "Less important" these days? - Example: "Content", "Description" and "Language".
+<a href="https://www.w3schools.com/tags/tag_meta.asp" target="_blank" title="About Meta-Tags on w3schools">Read more</a>
+
+
+More about SEO
+And what can I do to improve it
+Search Engines like: Google, Bing and more, use a "set of protocols" to range "Generic Search" Results. The more of these "protocols" you meet in your MarkUp and Code, the better your "SEO" and "listing" will be!
+Most Major Search Engines refer to the protocols at w3.org to rate your HTML. A good "Markup" or HTML is an important marker for a good SEO! Use recommended elements for relevant content!
+Meta tags are "snippets" of code that tell search engines important information about your web page, such as how they should display it in search results. They also tell web browsers how to display it to visitors.
+<a href="https://www.wordstream.com/blog/ws/2015/04/30/seo-basics" target="_blank" title="More about SEO on Wordstream.com">Read more</a>
+
+Content is King!
+Create content that ranks
+Well-written content engages the reader, increases search engine rankings and traffic, and increases the likelihood of quality links from other sites. Here's a look at each of the three primary benefits of quality content.
+Ultimately, your content needs to stand out so people will click through from the SERPs. (Being unique also helps with earning links.) Find an angle or include original tidbits that the top-ranking pages don’t have. These could come from your personal experience, expertise, data, interviews, and more.
+Ensure your content is simple to read – People are busy. They don’t want to read more than what’s necessary. Keep your words simple, use formatting like bullets, and insert plenty of images, videos, GIFs, and more.
+<a href="https://www.searchenginewatch.com/2007/05/01/the-golden-rule-of-seo-content-is-king/" target="_blank" title="About Content on searchenginewatch.com">Read more</a>
+
+https://ahrefs.com/blog/seo-meta-tags/
+https://ahrefs.com/seo
