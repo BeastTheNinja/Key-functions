@@ -1,0 +1,128 @@
+---
+
+## **👀 Hvad sker der i koden?**  
+Når du trykker på en tast på tastaturet:  
+1. **Fanger JavaScript tastetrykket**  
+2. **Opretter et nyt HTML-element** med bogstavet  
+3. **Placerer det tilfældigt på skærmen**  
+4. **Giver det en tilfældig farve**  
+5. **Animerer det opad og gør det gennemsigtigt**  
+6. **Fjerner det efter 2 sekunder**  
+
+---
+
+## **📝 Trinvis forklaring af koden**  
+
+### **1️⃣ Lytter efter tastetryk**  
+```javascript
+document.addEventListener("keydown", function(event) {
+```
+- **`document.addEventListener("keydown", function(event) {`** betyder, at vi lytter efter en tast, der bliver trykket.  
+- **`event`** indeholder oplysninger om, hvilken tast der blev trykket.  
+
+---
+
+### **2️⃣ Finder den tast, der blev trykket**  
+```javascript
+let key = event.key;
+```
+- **`event.key`** giver os bogstavet eller symbolet på den tast, der blev trykket.  
+
+---
+
+### **3️⃣ Opretter et nyt HTML-element**  
+```javascript
+let letter = document.createElement("div");
+letter.classList.add("letter");
+letter.textContent = key;
+```
+- **`document.createElement("div")`** laver et nyt `<div>`-element, som vi vil bruge til at vise bogstavet.  
+- **`letter.classList.add("letter")`** tilføjer CSS-klassen `"letter"`, så vi kan style det.  
+- **`letter.textContent = key`** sætter bogstavet inde i `<div>`.  
+
+---
+
+### **4️⃣ Tilføjer en tilfældig placering på skærmen**  
+```javascript
+let x = Math.random() * window.innerWidth;
+let y = Math.random() * window.innerHeight;
+
+letter.style.left = `${x}px`;
+letter.style.top = `${y}px`;
+```
+- **`Math.random()`** laver et tilfældigt tal mellem `0` og `1`.  
+- **`Math.random() * window.innerWidth`** vælger en tilfældig position fra `0` til hele skærmens bredde.  
+- **`letter.style.left = `${x}px`;`** placerer elementet på den vandrette akse.  
+- **`letter.style.top = `${y}px`;`** placerer det lodret.  
+
+---
+
+### **5️⃣ Giver en tilfældig farve**  
+```javascript
+letter.style.color = `hsl(${Math.random() * 360}, 100%, 70%)`;
+```
+- **`hsl(hue, saturation, lightness)`** bruges til at lave farver i CSS.  
+- **`Math.random() * 360`** vælger en tilfældig farve mellem `0°` og `360°` (forskellige nuancer).  
+
+---
+
+### **6️⃣ Tilføjer elementet til skærmen**  
+```javascript
+document.getElementById("container").appendChild(letter);
+```
+- **`appendChild(letter)`** tilføjer det nye element inde i `<div id="container">`, så det vises på skærmen.  
+
+---
+
+### **7️⃣ Starter animationen**  
+```javascript
+setTimeout(() => {
+    letter.style.transform = "translateY(-100px)";
+    letter.style.opacity = "0";
+}, 50);
+```
+- **`setTimeout(() => {...}, 50);`** venter **50 millisekunder**, før animationen starter.  
+- **`letter.style.transform = "translateY(-100px)";`** flytter bogstavet **100px opad**.  
+- **`letter.style.opacity = "0";`** gør bogstavet gennemsigtigt.  
+
+---
+
+### **8️⃣ Fjerner elementet fra skærmen efter 2 sekunder**  
+```javascript
+setTimeout(() => {
+    letter.remove();
+}, 2000);
+```
+- **Efter 2 sekunder (`2000ms`) bliver elementet fjernet fra DOM'en**, så det ikke fylder unødvendig hukommelse.  
+
+---
+
+## **🎨 CSS (hvordan det vises)**
+```css
+.letter {
+    position: absolute;
+    font-size: 3rem;
+    font-weight: bold;
+    opacity: 1;
+    transition: transform 2s ease-out, opacity 2s ease-out;
+}
+```
+- **`.letter { position: absolute; }`** betyder, at elementet kan placeres frit over skærmen.  
+- **`font-size: 3rem;`** gør teksten stor.  
+- **`transition: transform 2s ease-out, opacity 2s ease-out;`** laver en glidende animation.  
+
+---
+
+## **🛠️ Opsummering**
+| Trin | Hvad sker der? |
+|------|--------------|
+| 1 | Vi lytter efter tastetryk. |
+| 2 | Vi finder ud af, hvilken tast der blev trykket. |
+| 3 | Vi opretter et HTML-element til at vise bogstavet. |
+| 4 | Vi placerer bogstavet tilfældigt på skærmen. |
+| 5 | Vi giver det en tilfældig farve. |
+| 6 | Vi tilføjer det til skærmen. |
+| 7 | Vi starter animationen (flytter det opad og gør det gennemsigtigt). |
+| 8 | Vi fjerner det efter 2 sekunder. |
+
+---
