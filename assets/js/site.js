@@ -1,6 +1,8 @@
 // - **`document.addEventListener("keydown", function(event) {`** betyder, at vi lytter efter en tast, der bliver trykket.  
 // - **`event`** indeholder oplysninger om, hvilken tast der blev trykket.  
 document.addEventListener("keydown", function(event) {
+    console.log(event);
+    
     // giver os bogstavet eller symbolet på den tast, der blev trykket.  
     // Opret et nyt element til bogstavet
     let key = event.key;
